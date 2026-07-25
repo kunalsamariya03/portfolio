@@ -1,72 +1,85 @@
-# Kunal Samariya — Portfolio
+# 🚀 Kunal Samariya — Portfolio
 
-A premium, matte-navy glassmorphism portfolio built with React, Vite, and Tailwind CSS. Features
-a radial "skill tree" that maps the full technical stack as branching, dashed connections.
+A premium, matte-navy glassmorphism portfolio built with **React 18**, **Vite**, and **Tailwind CSS**. It features interactive sections, a radial skill tree, EmailJS integration for direct contact messages, and seamless resume downloading.
 
-## Stack
+---
 
-- React 18 + Vite
-- Tailwind CSS
-- lucide-react icons
-- Fonts: Fraunces (display), Inter (body), JetBrains Mono (labels/mono accents)
+## 🛠️ Tech Stack & Dependencies
 
-## Getting started
+- **Frontend:** React 18, Vite, Tailwind CSS
+- **Icons:** `lucide-react`
+- **Form Handling:** `@emailjs/browser`
+- **Typography:** Fraunces (Display), Inter (Body), JetBrains Mono (Accents)
+- **Deployment:** Vercel
 
-```bash
-npm install
-npm run dev
-```
+---
 
-Open the URL Vite prints (usually `http://localhost:5173`).
+## ✨ Features
 
-## Build for production
+- **⚡ High Performance:** Lightning-fast load times powered by Vite.
+- **📄 Instant Resume Download:** Pre-configured PDF download in the Hero section.
+- **✉️ Working Contact Form:** Directly sends emails to inbox via EmailJS.
+- **🌴 Interactive Skill Tree:** Visualized radial branch mapping out full-stack & hardware competencies.
+- **🎨 Custom Matte Navy Theme:** Modern glassmorphism UI with custom glow/blur effects.
 
-```bash
-npm run build
-npm run preview   # preview the production build locally
-```
+---
 
-The production build outputs to `dist/`. Deploy that folder to Vercel, Netlify, GitHub Pages, or
-any static host.
+## 📁 Project Structure
 
-## Project structure
-
-```
+```text
 src/
-  assets/            → avatar.jpg, project-social.jpg
+  assets/            → avatar, project screenshots
   components/
     ui/
-      GlassPanel.jsx      → reusable frosted-glass container
-      SectionHeading.jsx  → eyebrow + title heading pattern
+      GlassPanel.jsx      → Frosted-glass container component
+      SectionHeading.jsx  → Eyebrow + title section layout
     Nav.jsx
-    Hero.jsx
+    Hero.jsx         → Hero banner + Resume download button
     About.jsx
-    SkillTree.jsx    → the branching skill-tree visualization
-    Projects.jsx
-    Achievements.jsx → hackathon/achievement timeline
-    Contact.jsx       → contact form (front-end only, see below)
+    SkillTree.jsx    → Radial branching skill-tree visualization
+    Projects.jsx     → Showcasing Full-Stack & IoT projects
+    Achievements.jsx → Hackathon and milestone timeline
+    Contact.jsx      → EmailJS integrated contact form
     Footer.jsx
-  data.js             → all resume content (profile, skills, projects, timeline)
+  data.js            → Centralized content (profile, skills, projects)
   App.jsx
   main.jsx
-  index.css
-tailwind.config.js     → color tokens, fonts, animation keyframes
-```
+  index.css          → Custom animations & tailwind directives
+tailwind.config.js   → Design tokens (navy, blush scales, fonts)
+public/
+  resume.pdf         → Resume file for instant download
+🚀 Getting Started Locally
 
-## Things to connect before going live
 
-1. **Resume download** — the "Resume" button in the hero links to `/resume.pdf`. Drop your resume
-   PDF into the `public/` folder as `resume.pdf`, or update the `href` in `Hero.jsx`.
-2. **Contact form** — `Contact.jsx` currently only shows a "sent" confirmation locally. Wire the
-   `submit` handler up to a service like [Formspree](https://formspree.io) or
-   [EmailJS](https://www.emailjs.com), or your own backend endpoint.
-3. **Project images** — only the Social Media App project has a real screenshot. Add
-   photos/screenshots for the Ventilator and Drone projects to `src/assets/` and reference them in
-   `data.js` + `Projects.jsx`.
-4. **Content** — all resume text lives in `src/data.js`. Edit there — no need to touch components.
+Clone the repository:
 
-## Customizing the theme
+Bash
+git clone [https://github.com/kunalsamariya03/portfolio.git](https://github.com/kunalsamariya03/portfolio.git)
+cd portfolio
+Install dependencies:
 
-Colors, fonts, and animation timing are all defined as tokens in `tailwind.config.js`
-(`navy`, `blush` color scales) and `src/index.css`. Change the hex values there to retint the
-whole site consistently.
+Bash
+npm install
+Set up Environment Variables:
+Create a .env file in the root directory and add your EmailJS keys:
+
+Code snippet
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+
+
+Run development server:
+
+Bash
+npm run dev
+📦 Production Build
+Bash
+npm run build
+npm run preview   # Preview production build locally
+The output build will be in the dist/ directory, ready to be deployed on Vercel or Netlify.
+
+📬 Connect With Me
+GitHub: @kunalsamariya03
+
+LinkedIn: Kunal Samariya
