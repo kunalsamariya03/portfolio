@@ -9,7 +9,7 @@ export const SKILL_BRANCHES = [
     id: "frontend",
     label: "Frontend & Mobile",
     angle: -22,
-    nodes: ["React.js", "React Native", "Tailwind CSS", "NativeWind", "React Native Paper"],
+    nodes: ["React.js", "React Native", "Tailwind CSS", "NativeWind", "chess.js", "react-chessboard"],
   },
   {
     id: "backend",
@@ -27,23 +27,36 @@ export const SKILL_BRANCHES = [
     id: "tools",
     label: "Tools & Hardware",
     angle: 108,
-    nodes: ["Git", "GitHub", "VS Code", "Android Studio", "Sensor Interfacing"],
+    nodes: ["Git", "GitHub", "VS Code", "Android Studio", "Vite", "Sensor Interfacing"],
   },
 ];
 
 export const PROJECTS = [
   {
     index: "01",
+    title: "AetherPawn — Pass & Play Chess",
+    subtitle: "React.js · Glassmorphism UI Engine",
+    description:
+      "A modern, high-performance local 2-player chess application featuring custom SVG piece sets, state-tree move history, dynamic glassmorphism board themes, and auto-persistence.",
+    tech: ["React.js", "Tailwind CSS", "chess.js", "react-chessboard", "Vite"],
+    image: "chess", // Fallback icon auto-render hoga
+    links: { 
+      demo: "https://aetherpawn-chess.vercel.app/", 
+      github: "https://github.com/kunalsamariya03/AetherPawn-chess" 
+    },
+  },
+  {
+    index: "02",
     title: "Social Media Application",
     subtitle: "MERN Stack · Real-Time Communication",
     description:
       "Microblogging platform supporting real-time video/audio calling, live content sharing, and persistent session state across devices.",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "WebRTC", "Socket.io", "Redux Toolkit"],
     image: "social",
-    links: { demo: null, github: "https://github.com/kunalll03" },
+    links: { demo: null, github: "https://github.com/kunalsamariya03/AetherPawn-chess" },
   },
   {
-    index: "02",
+    index: "03",
     title: "Mechanical 3D Ventilator System",
     subtitle: "Biomedical Engineering · Mechatronics",
     description:
@@ -53,7 +66,7 @@ export const PROJECTS = [
     links: { demo: null, github: null },
   },
   {
-    index: "03",
+    index: "04",
     title: "Object Detection & Stabilization Drone",
     subtitle: "Robotics · Embedded Systems",
     description:
@@ -94,7 +107,7 @@ export const PROFILE = {
   location: "Jaipur, Rajasthan",
   email: "kunalsamariya03@gmail.com",
   phone: "+91 8306449196",
-  github: "https://github.com/kunalll03",
+  github: "https://github.com/kunalsamariya03",
   linkedin: "https://linkedin.com/in/kunalsamariya03",
   cgpa: "7.5 / 10",
   college: "Arya College of Engineering, Jaipur",
